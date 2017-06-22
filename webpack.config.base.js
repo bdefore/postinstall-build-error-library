@@ -33,14 +33,14 @@ module.exports = {
   resolveLoader: {
     modules: [
       `${__dirname}/src`,
-      `${__dirname}/node_modules`
+      'node_modules'
     ],
     extensions: ['.js', '.less']
   },
   resolve: {
     modules: [
       `${__dirname}/src`,
-      `${__dirname}/node_modules`
+      'node_modules'
     ],
     extensions: ['.js', '.less']
   },
@@ -54,7 +54,7 @@ module.exports = {
             presets: ['es2015', 'react', 'stage-0']
           }
         },
-        exclude: /node_modules/
+        include: `${__dirname}/src`
       },
       {
         test: /\.less$/,
