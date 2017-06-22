@@ -1,0 +1,11 @@
+.idea
+.lvimrc
+.nyc_output/
+coverage/
+*.iml
+app.log.*
+node_modules
+npm-debug.log
+/public
+*test-report.xml
+lint-report.xml
